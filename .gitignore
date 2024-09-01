@@ -218,3 +218,5 @@ fabric.properties
 .DS_Store
 
 .env
+
+*.cif

@@ -1,8 +1,9 @@
 import torch
 from pymatgen.core import Structure, Lattice
 from pymatgen.io.cif import CifWriter
+import sys
 
-x= torch.load("./custom/eval_gen.pt", map_location=torch.device('cpu'))
+x= torch.load(sys.path[0] + "/../custom/eval_gen.pt", map_location=torch.device('cpu'))
 
 def get_crystals_list(
         frac_coords, atom_types, lengths, angles, num_atoms):
@@ -68,5 +69,5 @@ for idx, data in enumerate(res[0]):
     lattice = Lattice.from_parameters(a=lengths[0], b=lengths[1], c=lengths[2], alpha=angles[0], beta=angles[1], gamma=angles[2])
     structure = Structure(lattice, atom_types, frac_coords)
     cif_writer = CifWriter(structure)
-    cif_writer.write_file(str(idx) + '.cif')
+    cif_writer.write_file(sys.path[0] + "/../structures/" + str(idx) + '.cif')
 
