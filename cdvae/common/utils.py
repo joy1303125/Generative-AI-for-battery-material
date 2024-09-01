@@ -6,7 +6,7 @@ import dotenv
 import pytorch_lightning as pl
 from omegaconf import DictConfig, OmegaConf
 
-
+ 
 def get_env(env_name: str, default: Optional[str] = None) -> str:
     """
     Safely read an environment variable.

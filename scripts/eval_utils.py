@@ -35,7 +35,7 @@ def load_data(file_path):
             else:
                 data[k] = torch.from_numpy(v).unsqueeze(0)
     else:
-        data = torch.load(file_path)
+        data = torch.load(file_path, map_location=torch.device('cpu'))
     return data
 
 
@@ -52,10 +52,10 @@ def load_config(model_path):
     return cfg
 
 
-def load_model(model_path, load_data=False, testing=True):
+def load_model(model_path, x=False, testing=True):
     with initialize_config_dir(str(model_path)):
         cfg = compose(config_name='hparams')
-        model = hydra.utils.instantiate(
+        model_d = hydra.utils.instantiate(
             cfg.model,
             optim=cfg.optim,
             data=cfg.data,
@@ -67,7 +67,7 @@ def load_model(model_path, load_data=False, testing=True):
             ckpt_epochs = np.array(
                 [int(ckpt.parts[-1].split('-')[0].split('=')[1]) for ckpt in ckpts])
             ckpt = str(ckpts[ckpt_epochs.argsort()[-1]])
-        model = model.load_from_checkpoint(ckpt)
+        model = model_d.load_from_checkpoint(ckpt)
         model.lattice_scaler = torch.load(model_path / 'lattice_scaler.pt')
         model.scaler = torch.load(model_path / 'prop_scaler.pt')
 
