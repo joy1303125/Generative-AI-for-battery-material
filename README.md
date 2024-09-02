@@ -24,6 +24,7 @@ It has several main functionalities:
 - [Datasets](#datasets)
 - [Training CDVAE](#training-cdvae)
 - [Generating materials](#generating-materials)
+- [Evaluating materials](#evaluate-validity-of-strucutres)
 - [Evaluating model](#evaluating-model)
 - [Authors and acknowledgements](#authors-and-acknowledgements)
 - [Citation](#citation)
@@ -52,6 +53,8 @@ To train a CDVAE, with your own dataset run the following command:
 ```
 python cdvae/run.py data=custom expname=custom
 ```
+
+If training with a custom dataset, ensure to go to `conf/data/custom.yaml` and change the `prop` field to match the desired property to optimize **(ex. formation energy)**.
 
 To use prebuilt datasets, use `data=carbon`, `data=mp_20`,  `data=perov` instead. CDVAE uses [hydra](https://hydra.cc) to configure hyperparameters, and users can modify them with the command line or configure files in `conf/` folder.
 
@@ -89,6 +92,21 @@ python scripts/evaluate.py --model_path MODEL_PATH --tasks recon gen opt
 - `angles`: the angles of the lattice, shape `(num_evals, M, 3)`
 - `num_atoms`: the number of atoms in each material, shape `(num_evals, M)`
 
+Run the following command to convert the pytorch pickles to CIF files:
+
+```
+python scripts/convert_to_cif.py
+```
+
+## Evaluate validity of strucutres
+
+To evaluate the validity of structures: 
+- **Deactivate the Conda environment** and ensure you have a Python version atleast 3.11  
+- Go to [https://www.dgl.ai/pages/start.html](https://www.dgl.ai/pages/start.html) and first install the DGL version compatible with your system
+- Then install the ALIGNN pip package by running  ```pip install alignn```
+
+Then run ``` python scripts/test_feasibility.py ``` to generate CSV files evaluating the generated structures.
+
 ## Evaluating model
 
 To compute evaluation metrics, run the following command:
@@ -99,11 +117,12 @@ python scripts/compute_metrics.py --root_path MODEL_PATH --tasks recon gen opt
 
 `MODEL_PATH` will be the path to the trained model. All evaluation metrics will be saved in `eval_metrics.json`.
 
+
 ## Authors and acknowledgements
 
 The software is primary written by [Tian Xie](www.txie.me), with signficant contributions from [Xiang Fu](https://xiangfu.co/).
 
-Updates are by Amruth Nadimpally.
+Updates are by [Amruth Nadimpally](https://github.com/amruthn1).
 
 The GNN codebase and many utility functions are adapted from the [ocp-models](https://github.com/Open-Catalyst-Project/ocp) by the [Open Catalyst Project](https://opencatalystproject.org/). Especially, the GNN implementations of [DimeNet++](https://arxiv.org/abs/2011.14115) and [GemNet](https://arxiv.org/abs/2106.08903) are used.
 
@@ -122,6 +141,10 @@ Please consider citing the following paper if you find our code & data useful.
   journal={arXiv preprint arXiv:2110.06197},
   year={2021}
 }
+```
+
+``` 
+ADD CITATION HERE WHEN PUBLISHED 
 ```
 
 ## Contact
