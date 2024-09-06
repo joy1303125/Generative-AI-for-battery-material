@@ -72,7 +72,19 @@ The name of the predicted propery is defined in `data.prop`, as in `conf/data/pe
 
 ## Generating materials
 
-To generate materials, run the following command:
+To generate materials from the preexisting trained model, run the following command:
+
+```
+python scripts/evaluate.py --model_path /full/path/to/project/custom --tasks recon gen
+```
+
+Then run the following command to convert the pytorch pickles to CIF files:
+
+```
+python scripts/convert_to_cif.py
+```
+
+To generate materials from your own trained model, run the following command:
 
 ```
 python scripts/evaluate.py --model_path MODEL_PATH --tasks recon gen opt
@@ -92,7 +104,7 @@ python scripts/evaluate.py --model_path MODEL_PATH --tasks recon gen opt
 - `angles`: the angles of the lattice, shape `(num_evals, M, 3)`
 - `num_atoms`: the number of atoms in each material, shape `(num_evals, M)`
 
-Run the following command to convert the pytorch pickles to CIF files:
+Then run the following command to convert the pytorch pickles to CIF files:
 
 ```
 python scripts/convert_to_cif.py
