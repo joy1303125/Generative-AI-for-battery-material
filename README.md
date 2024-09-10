@@ -1,20 +1,17 @@
 # Crystal Diffusion Variational AutoEncoder
 
-This software implementes Crystal Diffusion Variational AutoEncoder (CDVAE), which generates the periodic structure of materials.
+This is the Crystal Diffusion Variational AutoEncoder (CDVAE) used in our paper to generate novel structures for potential transitional metal battery usage.
 
-It has several main functionalities:
+Our trained model is provided in the ```custom``` folder for users to recreate our results and instructions are provided to train a custom model on a cusotm dataset.
 
-- Generate novel, stable materials by learning from a dataset containing existing material structures.
-- Generate materials by optimizing a specific property in the latent space, i.e. inverse design.
-
-[[Paper]](https://arxiv.org/abs/2110.06197) [[Datasets]](data/)
+[[Paper]](https://linkhere.com) [[Original Paper]](https://arxiv.org/abs/2110.06197)  [[Datasets]](data/)
 
 <p align="center">
   <img src="assets/illustrative.png" /> 
 </p>
 
 <p align="center">
-  <img src="assets/Tm4Ni4As4.gif" width="200">
+  <img src="assets/structures.png">
 </p>
 
 
@@ -54,7 +51,7 @@ To train a CDVAE, with your own dataset run the following command:
 python cdvae/run.py data=custom expname=custom
 ```
 
-If training with a custom dataset, ensure to go to `conf/data/custom.yaml` and change the `prop` field to match the desired property to optimize **(ex. formation energy)**.
+If training with a custom dataset, ensure to go to `conf/data/custom.yaml` and change the `prop` field to the name of the desired property to optimize **(ex. formation energy)** in the CSV file.
 
 To use prebuilt datasets, use `data=carbon`, `data=mp_20`,  `data=perov` instead. CDVAE uses [hydra](https://hydra.cc) to configure hyperparameters, and users can modify them with the command line or configure files in `conf/` folder.
 
@@ -78,7 +75,7 @@ To generate materials from the preexisting trained model, run the following comm
 python scripts/evaluate.py --model_path /full/path/to/project/custom --tasks recon gen
 ```
 
-Then run the following command to convert the pytorch pickles to CIF files:
+Then run the following command to convert the generated pytorch pickles to CIF files:
 
 ```
 python scripts/convert_to_cif.py
