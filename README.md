@@ -1,6 +1,6 @@
 # Crystal Diffusion Variational AutoEncoder
 
-This is the Crystal Diffusion Variational AutoEncoder (CDVAE) used in our paper to generate novel structures for potential transitional metal battery usage.
+This is the Crystal Diffusion Variational AutoEncoder (CDVAE) used in our paper to generate novel structures for transitional metal battery usage.
 
 Our trained model is provided in the ```custom``` folder for users to recreate our results and instructions are provided to train a custom model on a cusotm dataset.
 
