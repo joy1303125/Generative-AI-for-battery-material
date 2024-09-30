@@ -10,7 +10,7 @@ Original Projects Are:
 - CDVAE -> https://github.com/txie-93/cdvae
 - Crystal-Text-LLM -> https://github.com/facebookresearch/crystal-text-llm
 
-An abstraction of our results is provided below:
+An abstraction of our methodology is provided below:
 
 ![Diagram](assets/image.png)
 
