@@ -15,7 +15,12 @@ An abstraction of our results is provided below:
 ![Diagram](assets/main.png)
 
 
-## Authors
+## Citation
+
+Add Citation Here
+
+
+### Authors
 
 - [@amruthn1](https://www.github.com/amruthn1)
 - [@joy1303125](https://github.com/joy1303125)
