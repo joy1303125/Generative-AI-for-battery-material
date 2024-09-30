@@ -4,7 +4,7 @@ This is the Crystal Diffusion Variational AutoEncoder (CDVAE) used in our paper 
 
 Our trained model is provided in the ```custom``` folder for users to recreate our results and instructions are provided to train a custom model on a cusotm dataset.
 
-[[Paper]](https://linkhere.com) [[Original Paper]](https://arxiv.org/abs/2110.06197)  [[Datasets]](data/)
+[[Original Paper]](https://arxiv.org/abs/2110.06197)  [[Datasets]](data/)
 
 <p align="center">
   <img src="assets/illustrative.png" /> 
@@ -141,7 +141,7 @@ For the datasets, [Perov-5](data/perov_5) is curated from [Perovksite water-spli
 
 ## Citation
 
-Please consider citing the following paper if you find our code & data useful.
+Please consider citing the original paper if you find the code useful.
 
 ```
 @article{xie2021crystal,
@@ -150,10 +150,6 @@ Please consider citing the following paper if you find our code & data useful.
   journal={arXiv preprint arXiv:2110.06197},
   year={2021}
 }
-```
-
-``` 
-ADD CITATION HERE WHEN PUBLISHED 
 ```
 
 ## Contact
