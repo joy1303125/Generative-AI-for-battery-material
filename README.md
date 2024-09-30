@@ -4,7 +4,7 @@ This is the Crystal Diffusion Variational AutoEncoder (CDVAE) used in our paper 
 
 Our trained model is provided in the ```custom``` folder for users to recreate our results and instructions are provided to train a custom model on a cusotm dataset.
 
-[[Paper]](https://linkhere.com) [[Original Paper]](https://arxiv.org/abs/2110.06197)  [[Datasets]](data/)
+[[Datasets]](data/)
 
 <p align="center">
   <img src="assets/illustrative.png" /> 
@@ -131,7 +131,7 @@ python scripts/compute_metrics.py --root_path MODEL_PATH --tasks recon gen opt
 
 The software is primary written by [Tian Xie](www.txie.me), with signficant contributions from [Xiang Fu](https://xiangfu.co/).
 
-Updates are by [Amruth Nadimpally](https://github.com/amruthn1).
+Updates are by [Amruth Nadimpally](https://github.com/amruthn1) [Joy Datta](https://github.com/joy1303125).
 
 The GNN codebase and many utility functions are adapted from the [ocp-models](https://github.com/Open-Catalyst-Project/ocp) by the [Open Catalyst Project](https://opencatalystproject.org/). Especially, the GNN implementations of [DimeNet++](https://arxiv.org/abs/2011.14115) and [GemNet](https://arxiv.org/abs/2106.08903) are used.
 
@@ -155,7 +155,3 @@ Please consider citing the following paper if you find our code & data useful.
 ``` 
 ADD CITATION HERE WHEN PUBLISHED 
 ```
-
-## Contact
-
-Please leave an issue or reach out to Tian Xie (txie AT csail DOT mit DOT edu) if you have any questions.
