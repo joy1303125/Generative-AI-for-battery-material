@@ -131,7 +131,7 @@ python scripts/compute_metrics.py --root_path MODEL_PATH --tasks recon gen opt
 
 The software is primary written by [Tian Xie](www.txie.me), with signficant contributions from [Xiang Fu](https://xiangfu.co/).
 
-Updates are by [Amruth Nadimpally](https://github.com/amruthn1) [Joy Datta](https://github.com/joy1303125).
+Updates are by [Amruth Nadimpally](https://github.com/amruthn1) and [Joy Datta](https://github.com/joy1303125).
 
 The GNN codebase and many utility functions are adapted from the [ocp-models](https://github.com/Open-Catalyst-Project/ocp) by the [Open Catalyst Project](https://opencatalystproject.org/). Especially, the GNN implementations of [DimeNet++](https://arxiv.org/abs/2011.14115) and [GemNet](https://arxiv.org/abs/2106.08903) are used.
 
