@@ -1,0 +1,3 @@
+[submodule "alignn"]
+	path = alignn
+	url = https://github.com/usnistgov/alignn
