@@ -12,7 +12,7 @@ Original Projects Are:
 
 An abstraction of our results is provided below:
 
-![Diagram](assets/main.png)
+![Diagram](assets/abstract.png)
 
 
 ## Authors
