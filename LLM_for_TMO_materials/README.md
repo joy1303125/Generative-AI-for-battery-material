@@ -2,6 +2,8 @@
 
 This is the Large Language Model (LLM) used in our paper to generate novel structures for TMO battery usage.
 
+![Generated Crystals](assets/structures.png)
+
 To setup the environment, run:
 
 ```
