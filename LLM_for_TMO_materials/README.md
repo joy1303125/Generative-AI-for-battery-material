@@ -4,19 +4,31 @@ This is the Large Language Model (LLM) used in our paper to generate novel struc
 
 ![Generated Crystals](assets/structures.png)
 
-To setup the environment, run:
+To setup the environment, run the following command:
+
+### For ARM based Macs:
 
 ```
-source install.sh
+source install_arm.sh
 ```
 
-Train the model by running:
+### For CUDA based systems:
+
+Go to https://github.com/unslothai/unsloth?tab=readme-ov-file#pip-installation and edit the install_cuda.sh file with your appropriate Unsloth and CUDA version.
+
+Then run:
+
+```
+source install_cuda.sh
+```
+
+### Train the model by running:
 
 ```
 python llama_finetune.py --run-name 7b-test-run --model 7b
 ```
 
-To evaluate the results run:
+### To evaluate the results run:
 
 ```
 python test_feasibility.py --output_dir ./path/to/your/generated/cif/files
