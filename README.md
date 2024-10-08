@@ -1,5 +1,5 @@
 
-# Utilizing Generative AI for Innovation in Transitional Metal Oxide Battery Design
+# Generative AI for Discovering Porous Oxide Materials for Next-Generation Energy Storage
 
 This project contains two Generative AI models (CDVAE and LLM) we utilized with modifications and extra utilities written in order to generate crystal structures for TMO (transitional metal oxide) batteries.
 
