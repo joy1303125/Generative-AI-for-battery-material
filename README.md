@@ -13,7 +13,7 @@ Original Projects Are:
 
 An abstraction of our methodology is provided below:
 
-![Diagram](assets/image.png)
+![Diagram](assets/image1.png)
 
 
 ## Citation
