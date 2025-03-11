@@ -175,9 +175,7 @@ def optimization(model, ld_kwargs, data_loader,
 def main(args):
     # load_data if do reconstruction.
     model_path = Path(args.model_path)
-    model, test_loader, cfg = load_model(
-        model_path, load_data=('recon' in args.tasks) or
-        ('opt' in args.tasks and args.start_from == 'data'))
+    model, test_loader, cfg = load_model(model_path, load_data=('recon' in args.tasks) or ('opt' in args.tasks and args.start_from == 'data'))
     ld_kwargs = SimpleNamespace(n_step_each=args.n_step_each,
                                 step_lr=args.step_lr,
                                 min_sigma=args.min_sigma,
