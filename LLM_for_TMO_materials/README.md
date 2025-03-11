@@ -4,6 +4,8 @@ This is the Large Language Model (LLM) used in our paper to generate novel struc
 
 ![Generated Crystals](assets/structures.png)
 
+Updates are by [Amruth Nadimpally](https://github.com/amruthn1) and [Joy Datta](https://github.com/joy1303125)
+
 To setup the environment, run the following command:
 
 ### For ARM based Macs:
