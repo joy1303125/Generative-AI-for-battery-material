@@ -10,6 +10,20 @@ Original Projects Are:
 - CDVAE -> https://github.com/txie-93/cdvae
 - Crystal-Text-LLM -> https://github.com/facebookresearch/crystal-text-llm
 
+## Try on Colab:
+
+CDVAE:
+
+<a target="_blank" href="https://colab.research.google.com/github/joy1303125/Generative-AI-for-battery-material/blob/main/CDVAE_for_TMO_materials/CDVAE_Colab.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="CDVAE - Open In Colab"/>
+</a>
+
+LLM:
+
+<a target="_blank" href="https://colab.research.google.com/github/joy1303125/Generative-AI-for-battery-material/blob/main/LLM_for_TMO_materials/LLM_for_TMO_materials.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="LLM - Open In Colab"/>
+</a>
+
 
 An abstraction of our methodology is provided below:
 
