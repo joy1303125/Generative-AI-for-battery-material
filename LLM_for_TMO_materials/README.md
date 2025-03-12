@@ -6,6 +6,13 @@ This is the Large Language Model (LLM) used in our paper to generate novel struc
 
 Updates are by [Amruth Nadimpally](https://github.com/amruthn1) and [Joy Datta](https://github.com/joy1303125)
 
+## Try on Colab:
+<a target="_blank" href="https://colab.research.google.com/github/joy1303125/Generative-AI-for-battery-material/blob/main/LLM_for_TMO_materials/LLM_for_TMO_materials.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+<br/>
+
 To setup the environment, run the following command:
 
 ### For ARM based Macs:
