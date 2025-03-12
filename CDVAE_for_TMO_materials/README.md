@@ -6,6 +6,13 @@ Our trained model is provided in the ```custom``` folder for users to recreate o
 
 [[Original Paper]](https://arxiv.org/abs/2110.06197)  [[Datasets]](data/)
 
+## Try on Colab:
+<a target="_blank" href="https://colab.research.google.com/github/joy1303125/Generative-AI-for-battery-material/blob/main/CDVAE_for_TMO_materials/CDVAE_Colab.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+<br/>
+
 <p align="center">
   <img src="assets/illustrative.png" /> 
 </p>
