@@ -44,5 +44,5 @@ python llama_sample.py --model_name 8 --model_path ./exp/8b-run/
 ### To evaluate the results run:
 
 ```
-python test_feasibility.py --output_dir ./path/to/your/generated/cif/files
+python test_feasibility.py --output_dir ./outputs/llm_samples.csv
 ```
