@@ -34,7 +34,11 @@ source install_cuda.sh
 ### Train the model by running:
 
 ```
-python llama_finetune.py --run-name 7b-test-run --model 7b
+python llama_finetune.py --run-name 8b-run --model 8b
+```
+
+```
+python llama_sample.py --model_name 8 --model_path ./exp/8b-run/
 ```
 
 ### To evaluate the results run:
