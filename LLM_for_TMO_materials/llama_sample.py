@@ -150,7 +150,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_path", type=str, required=True)
     parser.add_argument("--num_samples", type=int, default=20)
     parser.add_argument("--batch_size", type=int, default=1)
-    parser.add_argument("--out_path", type=str, default="llm_samples.csv")
+    parser.add_argument("--out_path", type=str, default="./outputs/llm_samples.csv")
     parser.add_argument("--temperature", type=float, default=0.9)
     parser.add_argument("--top_p", type=float, default=0.9)
     parser.add_argument("--conditions", type=str, default="pretty_formula")
