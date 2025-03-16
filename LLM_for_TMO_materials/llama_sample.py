@@ -1,3 +1,5 @@
+from unsloth import FastLanguageModel
+
 import os
 import random
 import argparse
